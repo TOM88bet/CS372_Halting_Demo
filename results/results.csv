@@ -1,0 +1,7 @@
+case,input,known_behavior,timeout_seconds,observed_status,elapsed_seconds,exit_code,notes
+Immediate termination,N/A,Halts,2.0,HALTS,0.023568,0,Very short program that terminates immediately.
+Finite loop,N/A,Halts,2.0,HALTS,0.026359,0,A finite loop with a bounded computation.
+Slow termination,N/A,Halts after about 3 s,2.0,UNKNOWN,2.012941,,"Program terminates, but only after exceeding the 2-second observation window."
+Infinite loop,N/A,Does not halt,2.0,UNKNOWN,2.008436,,Program was written to run forever.
+Input-dependent program,1,Halts,2.0,HALTS,0.033106,0,"Same program as case 5B, but with a positive input that terminates."
+Input-dependent program,0,Does not halt,2.0,UNKNOWN,2.015766,,"Same program as case 5A, but with zero input that triggers an infinite loop."
